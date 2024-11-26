@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- localhost:2000/commwnt/edit -->
+    <fieldset> 
+        <legend>UPDATE</legend>
+    <form action="/comment/edit/<%=editData.id%>?_method=PATCH" method="POST">
+       <input  type="text"  name="username" value="<%=editData.username%>"/>
+       <br>
+       <br>
+
+       <input  type="text" name="comment" value="<%=editData.comment%>" />
+       <br>
+       <br>
+
+       <button type="submit">update</button>
+
+    </form>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <a   href="/comment/form"> create</a>
+    <%  for(let i of comments){  %>
+        <div id="card">
+            <h1> <%=i.id %></h1>
+            <h3> <%= i. username %></h3>
+            <p> <%= i. comment %></p>
+            <a href="/commnet/new/<%=i.id%>"> show</a>
+            <a href="/comment/edit/<%=i.id%>"> edit</a>
+            <!-- <form action="">
+                <button>delet</button>
+            </form> -->
+            <a  href="/comment/delet/<%=i.id%>">hata do mujheee</a>
+
+
+        </div>
+
+   <% } %>
+</body>
+</html>
+
+
+<!-- 
+let std=[{
+    id:1,
+    name:'a'
+},
+{
+    id:2,
+    name:'b'
+}
+] -->
+<!-- mongoose -->
