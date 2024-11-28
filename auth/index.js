@@ -57,9 +57,9 @@ app.post('/login', async(req,res)=>{
                  let validPass=     await bcrypt.compare(loginData.passWord,data.passWord)
                  if(validPass){
                        let token=   jwt.sign({email:data.email,role:data.role},'jdsbfiuwhfiuwhfwuif',{expiresIn:'1h'})
-                       console.log(token,"heheh");
+                       console.log(token);
                        
-                   return res.status(200).send('loginnnn',{token})
+                   return res.status(200).send(token)
                  }
                  else{
                     res.send('InvalidPssssss')

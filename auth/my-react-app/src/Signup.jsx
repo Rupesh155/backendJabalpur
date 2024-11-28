@@ -23,6 +23,12 @@ const Signup = () => {
         console.log(formData,"jheheh");
 
         let res=    await axios.post('http://localhost:2000/create',formData)
+        // let res=    await axios.get('http://localhost:2000/admin',       Headers:{
+
+        // })
+    // )
+
+
         console.log(res,"heheh");
         
           
